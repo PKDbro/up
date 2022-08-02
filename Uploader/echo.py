@@ -323,13 +323,13 @@ async def echo(bot, update):
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await chk.delete(True)
         
-        """await bot.send_message(
-            chat_id=update.chat.id,
-            text=Translation.FORMAT_SELECTION,
-            reply_markup=reply_markup,
-            
-            reply_to_message_id=update.id
-        )"""
+        #"""await bot.send_message(
+          #  chat_id=update.chat.id,
+            #text=Translation.FORMAT_SELECTION,
+            #reply_markup=reply_markup,
+       
+           # reply_to_message_id=update.id
+        #)"""
         await bot.send_photo(
             chat_id=update.chat.id,
             photo="https://telegra.ph/file/941a6267a84c1acb08dfa.jpg",
