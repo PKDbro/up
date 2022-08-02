@@ -69,8 +69,8 @@ async def broadcast_handler(m: Message):
                 success += 1
             else:
                 failed += 1
-            if sts == 400:
-                await db.delete_user(user['id'])
+            #if sts == 400:
+                #await db.delete_user(user['id'])
             done += 1
             if broadcast_ids.get(broadcast_id) is None:
                 break
