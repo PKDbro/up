@@ -10,7 +10,7 @@ from Uploader.database.database import db
 from Uploader.functions.display_progress import humanbytes
 from Uploader.database.bcast import broadcast_handler
 
-f = filters.command("status") & filters.user(Config.OWNER_ID)
+f = filters.command("status")
 
 s = filters.command("broadcast") & filters.user(Config.OWNER_ID) & filters.reply
 
