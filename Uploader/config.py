@@ -40,8 +40,10 @@ class Config(object):
     OUO_IO_API_KEY = ""
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
+    
     # set timeout for subprcess
-    PROCESS_MAX_TIMEOUT = 3700
+    PROCESS_MAX_TIMEOUT = 30
+    
     # watermark file
     DEF_WATER_MARK_FILE = ""
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
