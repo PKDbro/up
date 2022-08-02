@@ -72,4 +72,4 @@ class Database:
 
 
 
-db = Database(Config.DATABASE_URL, "Url-Uploader-Bot")
+db = Database(Config.DATABASE_URL, Config.SESSION_NAME) #"Url-Uploader-Bot")
