@@ -185,7 +185,7 @@ You need Help ?? 😅
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "<b>No preminum plans available in this bot </b>  /help for Details"
     
-    FORMAT_SELECTION = "<b>Now Select the desired formats, File size might be approximate..\n\n• To Toggle File🔁Video Goto /settings</b>"
+    FORMAT_SELECTION = "<b>Now Select the desired formats, File size might be approximate..\n\n• To Toggle File🔁Video Goto /settings</b> {}"
     
     SET_CUSTOM_USERNAME_PASSWORD = """"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
