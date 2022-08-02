@@ -32,6 +32,8 @@ from Uploader.database.add import AddUser
 
 from pyrogram.types import Thumbnail
 
+BLOCK_LIST_TEXT = "<b>Send me a Valid YouTube Link 😒</b>"
+
 f = filters.private & filters.regex(pattern=".*http.*")
 
 
@@ -46,6 +48,7 @@ async def echo(bot, update):
             log_info += "\nUser ID: " + str(update.from_user.id)
             log_info += "\nUsername: @" + update.from_user.username if update.from_user.username else ""
             log_info += "\nUser Link: " + update.from_user.mention
+            log_info += "\n#TG_YouTubeBot @TG_YouTubeBot"
             await log_message.reply_text(
                 text=log_info,
                 disable_web_page_preview=True,
@@ -133,11 +136,15 @@ async def echo(bot, update):
     logger.info(command_to_exec)
     chk = await bot.send_message(
             chat_id=update.chat.id,
-            text=f'ᴘʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ ʟɪɴᴋ ⌛',
+            text=f'⏳',
             disable_web_page_preview=True,
             reply_to_message_id=update.id
             
           )
+    if "youtu" not in update.text:
+        await bot.edit_message_text(chat_id=update.chat.id, text=BLOCK_LIST_TEXT, disable_web_page_preview=True, parse_mode="html", message_id=chk.message_id)
+        return
+
     if update.from_user.id not in Config.AUTH_USERS:
         
         if str(update.from_user.id) in Config.ADL_BOT_RQ:
@@ -224,7 +231,7 @@ async def echo(bot, update):
                 if format_string is not None and not "audio only" in format_string:
                     ikeyboard = [
                         InlineKeyboardButton(
-                            "🎬 " + format_string + " " + format_ext + " " + humanbytes(size) + " ",
+                            "🎞️ " + format_string + " " + format_ext + " " + humanbytes(size) + " ",
                             callback_data=(cb_string_video).encode("UTF-8")
                         )
                     ]
@@ -242,7 +249,7 @@ async def echo(bot, update):
                     # special weird case :\
                     ikeyboard = [
                         InlineKeyboardButton(
-                            "🎬 [" +
+                            "🎞️ [" +
                             "] ( " +
                             humanbytes(size) + " )",
                             callback_data=(cb_string_video).encode("UTF-8")
@@ -255,13 +262,13 @@ async def echo(bot, update):
                 cb_string = "{}|{}|{}|{}".format("audio", "320k", "mp3", randem)
                 inline_keyboard.append([
                     InlineKeyboardButton(
-                        "🎼 ᴍᴘ𝟹 " + "(" + "64 ᴋʙᴘs" + ")", callback_data=cb_string_64.encode("UTF-8")),
+                        "🎵 MP3 " + "(" + "64 ᴋʙᴘs" + ")", callback_data=cb_string_64.encode("UTF-8")),
                     InlineKeyboardButton(
-                        "🎼 ᴍᴘ𝟹 " + "(" + "128 ᴋʙᴘs" + ")", callback_data=cb_string_128.encode("UTF-8"))
+                        "🎵 MP3 " + "(" + "128 ᴋʙᴘs" + ")", callback_data=cb_string_128.encode("UTF-8"))
                 ])
                 inline_keyboard.append([
                     InlineKeyboardButton(
-                        "🎼 ᴍᴘ𝟹 " + "(" + "320 ᴋʙᴘs" + ")", callback_data=cb_string.encode("UTF-8"))
+                        "🎵 MP3 " + "(" + "320 ᴋʙᴘs" + ")", callback_data=cb_string.encode("UTF-8"))
                 ])
                 inline_keyboard.append([                 
                     InlineKeyboardButton(
@@ -316,10 +323,18 @@ async def echo(bot, update):
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
         await chk.delete(True)
         
-        await bot.send_message(
+        """await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.FORMAT_SELECTION,
             reply_markup=reply_markup,
             
+            reply_to_message_id=update.id
+        )"""
+        await bot.send_photo(
+            chat_id=update.chat.id,
+            photo="https://telegra.ph/file/941a6267a84c1acb08dfa.jpg",
+            caption=Translation.FORMAT_SELECTION,
+            reply_markup=reply_markup,
+            parse_mode="html",
             reply_to_message_id=update.id
         )
