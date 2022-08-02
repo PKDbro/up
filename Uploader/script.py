@@ -21,11 +21,11 @@ Hello👋 {} ,
   ➠ Support YouTube Shorts Link
   ➠ YouTube Playlist (Coming Soon).....
   
-✪ » <b>⚙️ Press /settings to change my settings</b>
+<b>⚙️ Press /settings to change my settings</b>
 
-NB: <code> Bot may slow ,so wait 5 - 10 second to bot respond....
+<b>NB</b>: <code> Bot may slow ,so wait 5 - 10 second to bot respond....
 please dont spam with links...</code>
-┈┈┈••💙✿❤✿💚••┈┈┈
+┈┈┈••💙✿💛✿💚••┈┈┈
 <b>Made with ♥️ by @MyTestBotZ </b>
 """
     HELP_TEXT_Old = """
@@ -48,21 +48,23 @@ You need Help ?? 😅
 """
     HELP_TEXT = """<b><u>How to Use me 🤔</u></b>
     
-0. <b>First go to the /settings and change the bot behavior as your choice.</b>
+  <b>First go to the /settings and change the bot behavior as your choice.</b>
 
-1. <b>Send Youtube url</b>
+1. <b>Send Any Youtube url</b>
         
 2. <b>Select the Desired File Size Button.</b>
   
-   
    <b>Thats it, I will Do Rest of it 😌 </b>
    
 <b><u>Set Thumbnail</u></b>
 ➠ Send a photo to make it as permanent thumbnail.
+
 <b><u>To Delete Thumbnail</u></b>
 ➠ Send /delthumb to deleting thumbnail.
+
 <b><u>Show Thumbnail</u></b>
 ➠ Send /showthumb to view custom thumbnail
+
 ➠ Use /caption to Set caption as Reply to Media
 """
     ABOUT_TEXT = """
@@ -182,7 +184,7 @@ You need Help ?? 😅
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "<b>No preminum plans available in this bot </b>  /help for Details"
     
-    FORMAT_SELECTION = "Now Select the desired formats, File size might be approximate.."
+    FORMAT_SELECTION = "Now Select the desired formats, File size might be approximate..\n\n• To Toggle File 🔁 Video Goto /settings"
     
     SET_CUSTOM_USERNAME_PASSWORD = """"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
