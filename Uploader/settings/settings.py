@@ -27,7 +27,7 @@ async def OpenSettings(m: "types.Message"):
                                     callback_data="setThumbnail")]
     ]
     if thumbnail:
-        buttons_markup.append([types.InlineKeyboardButton("🦊 Show Thumbnail",
+        buttons_markup.append([types.InlineKeyboardButton("🖼️ Show Thumbnail",
                                                           callback_data="showThumbnail")])
     buttons_markup.append([types.InlineKeyboardButton("📛 Close",
                                                       callback_data="close")])
