@@ -228,7 +228,7 @@ async def youtube_dl_call_back(bot, update):
                  await update.message.reply_video(
                     #chat_id=update.message.chat.id,
                     video=download_directory,
-                    caption=description,
+                    caption=description + "\n\n © @TG_YoutubeBot",
                     duration=duration,
                     width=width,
                     height=height,
@@ -250,8 +250,8 @@ async def youtube_dl_call_back(bot, update):
                     #chat_id=update.message.chat.id,
                     audio=download_directory,
                     caption=description + "\n © @Tg_YoutubeBot",
-                    #caption=f"{description} \n\n<b>© @TG_YouTubeBot</b>",
-                    
+
+                  
                     duration=duration,
                     thumb=thumbnail,
                     #reply_to_message_id=update.id,
