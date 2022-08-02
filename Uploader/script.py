@@ -245,7 +245,10 @@ You can use /rename command after receiving file to rename it with custom thumbn
     CANCEL_STR = "Process Cancelled"
     ZIP_UPLOADED_STR = "Uploaded {} files in {} seconds"
     
-    FREE_USER_LIMIT_Q_SZE = "⏳ Please Wait 30 Second Before Next Request \n • Check Your Current /plans" 
+    FREE_USER_LIMIT_Q_SZE = """Stop Spamming 🤢💢😬
+    ⏳ Please Wait 10 Second Before Next Request
+
+ \n • <b>Check Your Current /plans</b>"""
     Old = """Cannot Process Free users only 1 request per 4 hrs\n
 Upgrade your /plans to Remove Time Gaps and For link Processing"""
     
