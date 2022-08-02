@@ -212,7 +212,7 @@ async def youtube_dl_call_back(bot, update):
                     #chat_id=update.message.chat.id,
                     document=download_directory,
                     thumb=thumbnail,
-                    caption=description + "\n\n © @TG_YouTubeBot",
+                    caption=description,
                     #parse_mode=enums.ParseMode.HTML,
                     #reply_to_message_id=update.id,
                     progress=progress_for_pyrogram,
@@ -228,7 +228,7 @@ async def youtube_dl_call_back(bot, update):
                  await update.message.reply_video(
                     #chat_id=update.message.chat.id,
                     video=download_directory,
-                    caption=description + "\n\n © @TG_YouTubeBot",
+                    caption=description,
                     duration=duration,
                     width=width,
                     height=height,
@@ -249,8 +249,8 @@ async def youtube_dl_call_back(bot, update):
                 await update.message.reply_audio(
                     #chat_id=update.message.chat.id,
                     audio=download_directory,
-                    caption=description + "\n\n © @Tg_YouTubeBot",
-                  
+                    caption=description,
+                    
                     duration=duration,
                     thumb=thumbnail,
                     #reply_to_message_id=update.id,
