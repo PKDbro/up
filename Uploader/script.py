@@ -123,8 +123,9 @@ You need Help ?? 😅
 
     PLANS = """ You Can Use This Bot 100% Freely Until I Change My Mind 😜😌😌
     
-   You Like To Support My Works, Please Feel Free To Donate Any Amount You Like. 
-   Cᴏɴᴛᴀᴄᴛ ᴍᴇ ᴠɪᴀ @OO7ROBot"""
+   If You Like To Support My Works, Please Feel Free To Donate Any Amount You Like. 
+   
+   • Cᴏɴᴛᴀᴄᴛ ᴍᴇ ᴠɪᴀ @OO7ROBot"""
     PLANS_old = """🔰 My Plans 🔰
 
 🛡️PLANS 1(PER 50 LINKS)🛡️
@@ -184,7 +185,7 @@ You need Help ?? 😅
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "<b>No preminum plans available in this bot </b>  /help for Details"
     
-    FORMAT_SELECTION = "Now Select the desired formats, File size might be approximate..\n\n• To Toggle File 🔁 Video Goto /settings"
+    FORMAT_SELECTION = "<b>Now Select the desired formats, File size might be approximate..\n\n• To Toggle File🔁Video Goto /settings</b>"
     
     SET_CUSTOM_USERNAME_PASSWORD = """"""
     NOYES_URL = "@robot URL detected. Please use https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
@@ -243,8 +244,10 @@ You need Help ?? 😅
 You can use /rename command after receiving file to rename it with custom thumbnail support."""
     CANCEL_STR = "Process Cancelled"
     ZIP_UPLOADED_STR = "Uploaded {} files in {} seconds"
-    FREE_USER_LIMIT_Q_SZE = """Cannot Process Free users only 1 request per 4 hrs\n
+    
+    FREE_USER_LIMIT_Q_SZE = "⏳ Please Wait 30 Second Before Next Request \n • Check Your Current /plans" """Cannot Process Free users only 1 request per 4 hrs\n
 Upgrade your /plans to Remove Time Gaps and For link Processing"""
+    
     SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
     FORCE_SUBSCRIBE_TEXT = "<b>Sorry Dear You Must Join My Updates Channel😌😉....</b> \n <i>Due To OverLoad Only Channel Subscribers Can Use Meh</i>"
     BANNED_USER_TEXT = "<code>You are Banned!</code>"
