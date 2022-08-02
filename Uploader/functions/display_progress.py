@@ -15,7 +15,7 @@ async def progress_for_pyrogram(
 ):
     now = time.time()
     diff = now - start
-    if round(diff % 10.00) == 0 or current == total:
+    if round(diff % 5.00) == 0 or current == total:
         # if round(current / total * 100, 0) % 5 == 0:
         percentage = current * 100 / total
         speed = current / diff
@@ -25,23 +25,25 @@ async def progress_for_pyrogram(
 
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
-
-        progress = "[{0}{1}] \nP: {2}%\n".format(
-            ''.join(["◾" for _ in range(math.floor(percentage / 5))]),
-            ''.join(["◽" for _ in range(20 - math.floor(percentage / 5))]),
+        time_to_completion = TimeFormatter(milliseconds=time_to_completion)
+        
+        progress = "Pʀᴏɢʀᴇss... {2} {0}{1}\n\n".format(
+            ''.join(["🟩" for _ in range(math.floor(percentage / 5))]),
+            ''.join(["⬜️" for _ in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2),
         )
 
 
-        tmp = progress + "{0} of {1}\n\nSpeed: {2}/s\n\nETA: {3}\n\n".format(
+        tmp = progress + "✊💦 Uᴘʟᴏᴀᴅᴇᴅ : {0} \n\n✊💨 Sᴘᴇᴇᴅ : {2}/s\n\n ✊💨 Fɪʟᴇ Sɪᴢᴇ : {1} ✊💦 Tɪᴍᴇ Lᴇғᴛ : {4}\n\n © @TG_YouTubeBot♥️".format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
             # elapsed_time if elapsed_time != '' else "0 s",
-            estimated_total_time if estimated_total_time != '' else "0 s"
+            estimated_total_time if estimated_total_time != '' else "0 s",
+            time_to_completion if time_to_completion != '' else  "0 s"
         )
         try:
-            await message.edit(text=f"{ud_type}\n {tmp}")
+            await message.edit(text=f"{tmp}\n {ud_type}")
         except:
             pass
 
