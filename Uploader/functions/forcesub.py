@@ -15,7 +15,7 @@ async def handle_force_subscribe(bot, message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=message.from_user.id,
-                text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/tellybots).",
+                text="Sorry Sir, You are Banned to Use Our Service.",
                 
                 disable_web_page_preview=True,
                 reply_to_message_id=message.id,
@@ -24,11 +24,11 @@ async def handle_force_subscribe(bot, message):
     except UserNotParticipant:
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="Please Join My ♻️ Update Channel to Use Me!\n\nDue to Overload, Only Channel Subscribers can use me!",
+            text="Please Join My Update Channel to Use Me!\n\nDue to Overload, Only Channel Subscribers can use me!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("♻️ Please Join my update Channel ♻️", url=invite_link.invite_link)
+                        InlineKeyboardButton("⭕ Please Join my update Channel ⭕", url=invite_link.invite_link)
                     ]
                 ]
             ),
@@ -39,7 +39,7 @@ async def handle_force_subscribe(bot, message):
     except Exception:
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="Something Went Wrong. Contact My [Support Group](https://t.me/Tellybots).",
+            text="Something Went Wrong. Contact My Creator ",
             
             disable_web_page_preview=True,
             reply_to_message_id=message.id,
