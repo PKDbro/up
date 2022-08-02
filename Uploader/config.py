@@ -42,7 +42,7 @@ class Config(object):
     MAX_MESSAGE_LENGTH = 4096
     
     # set timeout for subprcess
-    PROCESS_MAX_TIMEOUT = 30
+    PROCESS_MAX_TIMEOUT = 10
     
     # watermark file
     DEF_WATER_MARK_FILE = ""
