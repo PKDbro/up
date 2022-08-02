@@ -249,7 +249,8 @@ async def youtube_dl_call_back(bot, update):
                 await update.message.reply_audio(
                     #chat_id=update.message.chat.id,
                     audio=download_directory,
-                    caption=description,
+                    #caption=description,
+                    caption=f"{description} \n\n<b>© @TG_YouTubeBot</b>",
                     
                     duration=duration,
                     thumb=thumbnail,
