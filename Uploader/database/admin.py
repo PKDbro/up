@@ -14,7 +14,7 @@ f = filters.command("status")
 
 s = filters.command("broadcast") & filters.user(Config.OWNER_ID) & filters.reply
 
-@Client.on_message(filters.command("status"))
+@Client.on_message(filters.command('status'))
 async def edited(_, m: Message):
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
