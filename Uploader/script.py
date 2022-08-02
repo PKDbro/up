@@ -197,14 +197,14 @@ You need Help ?? 😅
     
     DOWNLOAD_START_old = "Trying to Download ⌛\n\n💮🌸 <i>{} 💮🌸</i>"
     UPLOAD_START_old = "💮🌸 <i>{} 💮🌸</i>\n\n📤 Uploading Please Wait "
-    DOWNLOAD_START = "📥 <b>Dᴏᴡɴʟᴏᴀᴅɪɴɢ Tᴏ Mʏ sᴇʀᴠᴇʀ Pʟᴇᴀsᴇ Wᴀɪᴛ</b>... \n\n➤Fɪʟᴇ Nᴀᴍᴇ :<i> {}</i>\n\nⁱᵗˢ ᵗᵃᵏᵉ ᵗⁱᵐᵉ ᵈᵉᵖᵉⁿᵈ ᵒⁿ ʸᵒᵘʳ ᶠⁱˡᵉ ˢⁱᶻᵉ"
-    UPLOAD_START = "📤 <b>Uᴘʟᴏᴀᴅɪɴɢ ᴛᴏ TG...</b>\n\nFɪʟᴇ Nᴀᴍᴇ : <i>{}</i>"
+    DOWNLOAD_START = "📥 <b>Dᴏᴡɴʟᴏᴀᴅɪɴɢ Tᴏ Mʏ sᴇʀᴠᴇʀ Pʟᴇᴀsᴇ Wᴀɪᴛ</b>... \n\n➤ Fɪʟᴇ Nᴀᴍᴇ :<i> {}</i>\n\nⁱᵗˢ ᵗᵃᵏᵉ ᵗⁱᵐᵉ ᵈᵉᵖᵉⁿᵈ ᵒⁿ ʸᵒᵘʳ ᶠⁱˡᵉ ˢⁱᶻᵉ"
+    UPLOAD_START = "📤 <b>Uᴘʟᴏᴀᴅɪɴɢ ᴛᴏ TG...</b>\n\n Fɪʟᴇ Nᴀᴍᴇ : <i>{}</i>"
     
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
     
     AFTER_SUCCESSFUL_UPLOAD_MSG = " ThankYou For Using @TG_YouTubeBot. JOIN : https://t.me/MyTestBotZ\nFor the List of Telegram Bots"
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Dᴏᴡɴʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs.\n\nTʜᴀɴᴋs Fᴏʀ Usɪɴɢ Mᴇ\n\nUᴘʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Dᴏᴡɴʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs.\nUᴘʟᴏᴀᴅᴇᴅ ɪɴ {} sᴇᴄᴏɴᴅs\n\nTʜᴀɴᴋ Yᴏᴜ Fᴏʀ Usɪɴɢ @TG_YouTubeBot \n Dᴏɴᴛ Fᴏʀɢᴇᴛ ᴛᴏ Jᴏɪɴ & Sᴜᴘᴘᴏʀᴛ @MyTestBotZ"
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/OO7ROBot'>@OO7ROBot</a>"
     SAVED_CUSTOM_THUMB_NAIL = "Cᴜsᴛᴏᴍ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛʜᴜᴍʙɴᴀɪʟ sᴀᴠᴇᴅ. Tʜɪs ɪᴍᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴜsᴇᴅ ɪɴ ᴛʜᴇ ᴠɪᴅᴇᴏ / ғɪʟᴇ."
