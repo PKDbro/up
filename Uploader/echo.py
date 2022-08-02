@@ -142,7 +142,7 @@ async def echo(bot, update):
             
           )
     if "youtu" not in update.text:
-        await bot.edit_message_text(chat_id=update.chat.id, text=BLOCK_LIST_TEXT, disable_web_page_preview=True, parse_mode="html", message_id=chk.id)
+        await bot.edit_message_text(chat_id=update.chat.id, text=BLOCK_LIST_TEXT, disable_web_page_preview=True, message_id=chk.id)
         return
 
     if update.from_user.id not in Config.AUTH_USERS:
